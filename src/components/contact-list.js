@@ -8,7 +8,7 @@ function ContactList() {
     ? JSON.parse(localStorage.getItem('contacts'))
     : [];
 
-    const [contacts, setContacts] = useState(initContact);
+    const [contacts] = useState(initContact);
 
         if(contacts.length === 0) {
             return (
